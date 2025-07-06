@@ -1,2 +1,8 @@
-# fullstack-career-platform
-Full-stack Job Portal Web Application using ASP.NET Core (backend) and Angular (frontend). Built for learning and practice, this system allows users to post and view job listings.
+#  Job Portal Web Application
+
+This is a full-stack Job Portal web application built using:
+
+-  **ASP.NET Core** for the backend API (Job listings, posting, user data)
+-  **Angular** for the frontend user interface (job browsing, posting, applying)
+
+---
