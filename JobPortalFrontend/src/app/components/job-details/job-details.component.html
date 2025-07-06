@@ -1,0 +1,22 @@
+<div class="job-detail-container" *ngIf="job">
+    <div class="job-card">
+      <div class="job-header">
+        <div class="job-title-wrapper">
+          <h2 class="job-title">{{job.title}}</h2>
+          <div class="job-actions">
+            <!-- ############################################## -->
+            <a [routerLink]="['/jobs', job.id, 'edit']" class="edit-button">Edit</a>
+            <button  (click)="deleteJob()" class="delete-button">Delete</button>
+          </div>
+        </div>
+      </div>
+      <div class="job-content">
+        <h5 class="job-subtitle">{{job.company}} - {{job.location}}</h5>
+        <p class="job-description">{{job.description}}</p>
+      </div>
+      <div class="job-footer">
+        Posted: {{job.postedDate | date:'mediumDate'}}
+      </div>
+    </div>
+    <a routerLink="/jobs" class="back-button">Back to List</a>
+  </div>
